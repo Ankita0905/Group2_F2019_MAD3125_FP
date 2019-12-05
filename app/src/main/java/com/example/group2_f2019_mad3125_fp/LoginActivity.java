@@ -1,7 +1,9 @@
 package com.example.group2_f2019_mad3125_fp;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -20,24 +22,40 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        userName=findViewById(R.id.edtUserName);
-        password=findViewById(R.id.edtPassword);
-        btnlogin=findViewById(R.id.btnLogin);
-
+        userName = findViewById(R.id.edtUserName);
+        password = findViewById(R.id.edtPassword);
+        btnlogin = findViewById(R.id.btnLogin);
 
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(userName.getText().toString().equals("user@employee.com") &&
+                if (userName.getText().toString().equals("user@employee.com") &&
                         password.getText().toString().equals("s3cr3t")) {
-                    Intent i=new Intent(LoginActivity.this,SplashActivity.class);
+                    Intent i = new Intent(LoginActivity.this, MainMenuActivity.class);
                     startActivity(i);
-                }else{
-                    userName.setError("Invalid UserName");
-                    password.setError("Invalid Password");
-                    Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
-
+                } else {
+//                    if(userName.getText().toString()!="user@employee.com")
+//                    {
+//
+//                        userName.setError("Invalid UserName");
+//                    }
+//                    else
+//                        {
+//                        userName.setError(null);
+//                        }
+//
+//
+//                    if(password.getText().toString()!="s3cr3t")
+//                    {
+//                        password.setError("Invalid Password");
+//                    }
+//                    else
+//                    {
+//                        userName.setError(null);
+//                    }
+                    showAlert();
+                    //Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
 
 
                 }
@@ -45,4 +63,25 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    private void showAlert() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle("Login Error");
+        alertDialogBuilder.setMessage("Wrong Credentials!");
+        alertDialogBuilder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        alertDialogBuilder.setNegativeButton("Cancle", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        AlertDialog nAlertDialog = alertDialogBuilder.create();
+        nAlertDialog.show();
+
+
+    }
 }
