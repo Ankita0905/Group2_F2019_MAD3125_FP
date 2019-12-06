@@ -24,6 +24,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.group2_f2019_mad3125_fp.MainMenuActivity;
 import com.example.group2_f2019_mad3125_fp.R;
+import com.example.group2_f2019_mad3125_fp.Singleton;
 import com.example.group2_f2019_mad3125_fp.model.employee.Employee;
 import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.FullTime;
 import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.Intern;
@@ -95,6 +96,8 @@ public class AddEmployeeFragment extends Fragment {
 
     LinearLayout linearMain;
 
+
+    Singleton singleton=Singleton.getInstance();
 
     String name;
     int age = 0;
@@ -219,8 +222,8 @@ public class AddEmployeeFragment extends Fragment {
         btnSavePayroll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                bundle.putSerializable("employee", addData());
 
+                addData();
                // Intent mIntent = new Intent(AddEmployeeFragment.this,MainMenuActivity.class);
                 Log.d("DataEntry", "IntentCreated");
                // mIntent.putExtras(bundle);
@@ -247,6 +250,7 @@ public class AddEmployeeFragment extends Fragment {
             intern.setEmployee("Intern");
             addVehicleData(intern);
             employee = intern;
+            singleton.addEmployee(employee);
             Log.d("DataEntry", intern.getName());
         }
         if (rbFulltime.isChecked()){
@@ -264,6 +268,7 @@ public class AddEmployeeFragment extends Fragment {
             fullTime.calEarnings();
             addVehicleData(fullTime);
             employee = fullTime;
+            singleton.addEmployee(employee);
             Log.d("DataEntry", "Fulltime");
         }
         if (rbParttime.isChecked()){
@@ -285,6 +290,7 @@ public class AddEmployeeFragment extends Fragment {
                 com.setEmployee("Commission based");
                 addVehicleData(com);
                 employee = com;
+                singleton.addEmployee(employee);
                 Log.d("DataEntry", "com");
             }else
             {
@@ -304,6 +310,7 @@ public class AddEmployeeFragment extends Fragment {
                 fix.setEmployee("Fixed based");
                 addVehicleData(fix);
                 employee = fix;
+                singleton.addEmployee(employee);
                 Log.d("DataEntry", "Fix");
             }
         }
