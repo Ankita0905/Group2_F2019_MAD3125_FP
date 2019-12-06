@@ -16,20 +16,14 @@ import com.example.group2_f2019_mad3125_fp.R;
 
 public class AddEmployeeFragment extends Fragment {
 
-    private AddEmployeeViewModel addEmployeeViewModel;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        addEmployeeViewModel =
-                ViewModelProviders.of(this).get(AddEmployeeViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_addemployee, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        addEmployeeViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        //final TextView textView = root.findViewById(R.id);
+
         return root;
     }
 }
