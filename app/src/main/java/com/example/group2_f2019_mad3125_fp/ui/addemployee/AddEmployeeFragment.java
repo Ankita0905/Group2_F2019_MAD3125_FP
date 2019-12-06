@@ -1,5 +1,6 @@
 package com.example.group2_f2019_mad3125_fp.ui.addemployee;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,6 +22,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.group2_f2019_mad3125_fp.MainMenuActivity;
 import com.example.group2_f2019_mad3125_fp.R;
 import com.example.group2_f2019_mad3125_fp.model.employee.Employee;
 import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.FullTime;
@@ -34,6 +36,7 @@ import com.example.group2_f2019_mad3125_fp.model.vehicle.Vehicle;
 public class AddEmployeeFragment extends Fragment {
 
 
+    Bundle bundle= new Bundle();
     EditText edtName;
 
     EditText edtDob;
@@ -210,6 +213,18 @@ public class AddEmployeeFragment extends Fragment {
                     edtCommissionPerOrFixedAmt.setHint("Enter Fixed Commission Amount");
                 }
 
+            }
+        });
+
+        btnSavePayroll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bundle.putSerializable("employee", addData());
+
+               // Intent mIntent = new Intent(AddEmployeeFragment.this,MainMenuActivity.class);
+                Log.d("DataEntry", "IntentCreated");
+               // mIntent.putExtras(bundle);
+               // AddEmployeeFragment.this.startActivity(mIntent);
             }
         });
 
