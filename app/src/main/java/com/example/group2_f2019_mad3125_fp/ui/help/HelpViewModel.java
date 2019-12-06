@@ -1,16 +1,16 @@
-package com.example.group2_f2019_mad3125_fp.ui.share;
+package com.example.group2_f2019_mad3125_fp.ui.help;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class HelpViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public HelpViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is tools fragment");
     }
 
     public LiveData<String> getText() {
