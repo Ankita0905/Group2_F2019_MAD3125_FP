@@ -39,61 +39,33 @@ public class AddEmployeeFragment extends Fragment {
 
     Bundle bundle= new Bundle();
     EditText edtName;
-
     EditText edtDob;
-
     CheckBox chkVehicle;
-
     RadioButton rbCar;
-
     RadioButton rbMotorcycle;
-
     RadioGroup rgbVehicle;
-
     LinearLayout linearVehicle;
-
     ImageView imgModel;
-
     EditText edtModel;
-
     EditText edtplate;
-
     RelativeLayout relativeVehicleInfo;
-
     RadioButton rbParttime;
-
     RadioButton rbIntern;
-
     RadioButton rbFulltime;
-
     RadioGroup rgbEmployeeType;
-
     LinearLayout linearEmpType;
-
     EditText edtHours;
-
     EditText edtRate;
-
     CheckBox chkFixedOrCommission;
-
     EditText edtCommissionPerOrFixedAmt;
-
     LinearLayout linearFixedOrCommission;
-
     LinearLayout linearParttime;
-
     EditText edtSchoolName;
-
     LinearLayout linearIntern;
-
     EditText edtSalary;
-
     EditText edtBonus;
-
     LinearLayout linearFulltime;
-
     Button btnSavePayroll;
-
     LinearLayout linearMain;
 
 
