@@ -88,11 +88,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/imgModel"
-                android:layout_width="99dp"
-                android:layout_height="83dp"
-                app:srcCompat="@android:drawable/ic_notification_overlay" />
+<!--            <ImageView-->
+<!--                android:id="@+id/imgModel"-->
+<!--                android:layout_width="99dp"-->
+<!--                android:layout_height="83dp"-->
+<!--                app:srcCompat="@android:drawable/ic_notification_overlay" />-->
 
             <EditText
                 android:id="@+id/edtModel"

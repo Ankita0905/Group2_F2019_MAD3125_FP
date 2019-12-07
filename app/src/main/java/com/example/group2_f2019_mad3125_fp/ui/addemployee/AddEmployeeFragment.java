@@ -101,7 +101,7 @@ public class AddEmployeeFragment extends Fragment {
         rbMotorcycle=root.findViewById(R.id.rbMotorcycle);
         rgbVehicle=root.findViewById(R.id.rgbVehicle);
         linearVehicle=root.findViewById(R.id.linearVehicle);
-        imgModel=root.findViewById(R.id.imgModel);
+        //imgModel=root.findViewById(R.id.imgModel);
         edtModel=root.findViewById(R.id.edtModel);
         edtplate=root.findViewById(R.id.edtplate);
         relativeVehicleInfo=root.findViewById(R.id.relativeVehicleInfo);
@@ -197,7 +197,7 @@ public class AddEmployeeFragment extends Fragment {
 
                 addData();
                // Intent mIntent = new Intent(AddEmployeeFragment.this,MainMenuActivity.class);
-                Log.d("DataEntry", "IntentCreated");
+                //Log.d("DataEntry", "IntentCreated");
                // mIntent.putExtras(bundle);
                // AddEmployeeFragment.this.startActivity(mIntent);
             }
