@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public abstract class Employee implements Serializable {
+public class Employee implements Serializable {
 
     private String name;
     private int age;
@@ -28,6 +28,12 @@ public abstract class Employee implements Serializable {
     {
 
     }
+    public Employee(String eName,String eType)
+    {
+      this.name=eName;
+      this.employee=eType;
+    }
+
 
     public Employee(String name, int age) {
         this.name = name;
@@ -84,9 +90,9 @@ public abstract class Employee implements Serializable {
         this.employeeId = employeeId;
     }
 
-    public abstract double calEarnings();
+    public  double calEarnings()
     {
-
+      return 1000;
     }
 
     public void printMyData()

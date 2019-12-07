@@ -19,7 +19,7 @@ public class RecyclerViewDemoAdapter extends RecyclerView.Adapter<RecyclerViewDe
 
     private List<Employee> employeeList;
 
-    public RecyclerViewDemoAdapter(List<Employee> countryList)
+    public RecyclerViewDemoAdapter(List<Employee> employeeList)
     {
         this.employeeList = employeeList;
     }

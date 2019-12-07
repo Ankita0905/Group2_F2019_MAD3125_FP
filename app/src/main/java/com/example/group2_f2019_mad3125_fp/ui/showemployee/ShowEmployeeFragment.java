@@ -34,34 +34,36 @@ public class ShowEmployeeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_showemployee, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
 
-        rvEmpList = root.findViewById(R.id.empListrv);
+
+        rvEmpList = root.findViewById(R.id.emplistrv);
+        initViews();
         return root;
     }
+
     private void initViews() {
         populateData();
 
         demoAdapter = new RecyclerViewDemoAdapter(employeeList);
 
-        //Set Liner Layout
-        //LinearLayoutManager.HORIZONTAL
-        //LinearLayoutManager.VERTICAL
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         rvEmpList.setLayoutManager(mLayoutManager);
 
-        //Set Grid Layout
-        //GridLayoutManager mGridLayoutManager = new GridLayoutManager(this, 2);
-        //rvCountryList.setLayoutManager(mGridLayoutManager);
 
-        //Set Stagged Layout
-        //StaggeredGridLayoutManager mStaggeredGridLayoutManager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
-        //rvCountryList.setLayoutManager(mStaggeredGridLayoutManager);
         rvEmpList.setAdapter(demoAdapter);
+
     }
 
     private void populateData() {
         employeeList = new ArrayList<>();
+        employeeList=singleton.getEmployees();
+      //  employeeList.add(new Employee("Ankita","Intern"));
+//        employeeList=singleton.getEmployees();
+//        for(int i=0;i<employeeList.size();i++)
+//        {
+//            employeeList.add(new Employee(employeeList.get(i).getName(),employeeList.get(i).getEmployee()));
+//            //employeeList.get(i).getEmployee();
+//        }
 
     }
 }
