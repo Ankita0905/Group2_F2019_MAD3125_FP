@@ -13,7 +13,7 @@
 
         android:layout_margin="16dp"
 
-        android:fontFamily="@font/abril_fatface"
+
         android:text="TextView"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +26,7 @@
         android:layout_height="match_parent"
 
         android:layout_margin="16dp"
-        android:fontFamily="@font/abril_fatface"
+
         android:text="TextView"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
