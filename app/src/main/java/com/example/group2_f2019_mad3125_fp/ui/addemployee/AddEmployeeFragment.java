@@ -83,7 +83,7 @@ public class AddEmployeeFragment extends Fragment {
     String schoolName;
     double commisionPer;
     double fixedAmount;
-    
+
 
     //    Employee employee = new Employee();
     Vehicle vehicle = null;

@@ -1,6 +1,10 @@
 package com.example.group2_f2019_mad3125_fp.model.employee;
 
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Vehicle;
 
 import java.io.Serializable;
@@ -61,6 +65,7 @@ public class Employee implements Serializable {
         this.age = age;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     public int getCalBirthYear()
     {
         Calendar now = new GregorianCalendar();
