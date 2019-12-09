@@ -9,7 +9,8 @@ import com.example.group2_f2019_mad3125_fp.model.vehicle.Vehicle;
 
 import java.io.Serializable;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.util.Date;
+
 
 public class Employee implements Serializable {
 
@@ -52,7 +53,11 @@ public class Employee implements Serializable {
         this.name = name;
     }
 
-    public int getAge() {
+    public int getAge()
+    {
+        //Date dateobj = new Date();
+        int curDate= Calendar.getInstance().get(Calendar.YEAR);;
+        age=curDate-age;
         return age;
     }
 
@@ -65,11 +70,10 @@ public class Employee implements Serializable {
         this.age = age;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
+
     public int getCalBirthYear()
     {
-        Calendar now = new GregorianCalendar();
-        return now.getWeekYear() - age;
+        return 0;
     }
 
     public Vehicle getVehicle() {

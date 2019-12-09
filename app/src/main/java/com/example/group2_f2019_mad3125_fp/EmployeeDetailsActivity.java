@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.Serializable;
+
 public class EmployeeDetailsActivity extends AppCompatActivity {
 
     @Override

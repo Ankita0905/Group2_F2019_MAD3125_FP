@@ -230,7 +230,7 @@ public class AddEmployeeFragment extends Fragment {
             addVehicleData(intern);
             employee = intern;
             singleton.addEmployee(employee);
-           //Log.d("DataEntry", String.valueOf(intern.calEarnings()));
+           Log.d("DataEntry", String.valueOf(intern.getAge()));
         }
         if (rbFulltime.isChecked()){
             name = edtName.getText().toString();
