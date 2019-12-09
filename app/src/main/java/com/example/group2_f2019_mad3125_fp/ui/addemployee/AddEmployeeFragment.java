@@ -19,6 +19,8 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
@@ -196,6 +198,11 @@ public class AddEmployeeFragment extends Fragment {
             public void onClick(View view) {
 
                 addData();
+//                Fragment fr =new AddEmployeeFragment();
+//                FragmentManager fm = getFragmentManager();
+//                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//                fragmentTransaction.replace(R.id.nav_showEmployee, fr);
+//                fragmentTransaction.commit();
                // Intent mIntent = new Intent(AddEmployeeFragment.this,MainMenuActivity.class);
                 //Log.d("DataEntry", "IntentCreated");
                // mIntent.putExtras(bundle);
@@ -223,7 +230,7 @@ public class AddEmployeeFragment extends Fragment {
             addVehicleData(intern);
             employee = intern;
             singleton.addEmployee(employee);
-            Log.d("DataEntry", intern.getName());
+           // Log.d("DataEntry", intern.getName());
         }
         if (rbFulltime.isChecked()){
             name = edtName.getText().toString();
@@ -241,7 +248,7 @@ public class AddEmployeeFragment extends Fragment {
             addVehicleData(fullTime);
             employee = fullTime;
             singleton.addEmployee(employee);
-            Log.d("DataEntry", "Fulltime");
+           // Log.d("DataEntry", "Fulltime");
         }
         if (rbParttime.isChecked()){
             if (chkFixedOrCommission.isChecked())
@@ -263,7 +270,7 @@ public class AddEmployeeFragment extends Fragment {
                 addVehicleData(com);
                 employee = com;
                 singleton.addEmployee(employee);
-                Log.d("DataEntry", "com");
+              //  Log.d("DataEntry", "com");
             }else
             {
                 name = edtName.getText().toString();
@@ -283,10 +290,10 @@ public class AddEmployeeFragment extends Fragment {
                 addVehicleData(fix);
                 employee = fix;
                 singleton.addEmployee(employee);
-                Log.d("DataEntry", "Fix");
+               // Log.d("DataEntry", "Fix");
             }
         }
-        Log.d("DataEntry", "Finish");
+       // Log.d("DataEntry", "Finish");
         return employee;
     }
     public void addVehicleData(Employee emp)
@@ -301,7 +308,7 @@ public class AddEmployeeFragment extends Fragment {
                 emp.setVehicleType("car");
                 emp.setVehicle(car);
                 vehicle = car;
-                Log.d("DataEntry", "car");
+               // Log.d("DataEntry", "car");
             }
             if (rbMotorcycle.isChecked()){
                 Motorcycle motorcycle = new Motorcycle();
@@ -312,7 +319,7 @@ public class AddEmployeeFragment extends Fragment {
                 emp.setVehicleType("motor");
                 emp.setVehicle(motorcycle);
                 vehicle = motorcycle;
-                Log.d("DataEntry", "motorcycle");
+               // Log.d("DataEntry", "motorcycle");
             }
         }
     }
