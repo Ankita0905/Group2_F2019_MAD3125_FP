@@ -35,6 +35,7 @@ import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.partTime.
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Car;
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Motorcycle;
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Vehicle;
+import com.example.group2_f2019_mad3125_fp.ui.showemployee.ShowEmployeeFragment;
 
 public class AddEmployeeFragment extends Fragment {
 
@@ -47,7 +48,6 @@ public class AddEmployeeFragment extends Fragment {
     RadioButton rbMotorcycle;
     RadioGroup rgbVehicle;
     LinearLayout linearVehicle;
-    ImageView imgModel;
     EditText edtModel;
     EditText edtplate;
     RelativeLayout relativeVehicleInfo;
@@ -75,7 +75,7 @@ public class AddEmployeeFragment extends Fragment {
 
     String name;
     int age = 0;
-    //String department;
+
     double rate;
     double hoursWorked;
     double salary;
@@ -83,7 +83,7 @@ public class AddEmployeeFragment extends Fragment {
     String schoolName;
     double commisionPer;
     double fixedAmount;
-    //int manufacturingYear;
+    
 
     //    Employee employee = new Employee();
     Vehicle vehicle = null;
@@ -198,7 +198,7 @@ public class AddEmployeeFragment extends Fragment {
             public void onClick(View view) {
 
                 addData();
-//                Fragment fr =new AddEmployeeFragment();
+//                Fragment fr =new ShowEmployeeFragment();
 //                FragmentManager fm = getFragmentManager();
 //                FragmentTransaction fragmentTransaction = fm.beginTransaction();
 //                fragmentTransaction.replace(R.id.nav_showEmployee, fr);
@@ -230,7 +230,7 @@ public class AddEmployeeFragment extends Fragment {
             addVehicleData(intern);
             employee = intern;
             singleton.addEmployee(employee);
-           // Log.d("DataEntry", intern.getName());
+           //Log.d("DataEntry", String.valueOf(intern.calEarnings()));
         }
         if (rbFulltime.isChecked()){
             name = edtName.getText().toString();
@@ -248,7 +248,7 @@ public class AddEmployeeFragment extends Fragment {
             addVehicleData(fullTime);
             employee = fullTime;
             singleton.addEmployee(employee);
-           // Log.d("DataEntry", "Fulltime");
+            //Log.d("DataEntry", String.valueOf(fullTime.calEarnings()));
         }
         if (rbParttime.isChecked()){
             if (chkFixedOrCommission.isChecked())
