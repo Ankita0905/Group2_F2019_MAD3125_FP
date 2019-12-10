@@ -1,6 +1,5 @@
 package com.example.group2_f2019_mad3125_fp.ui.addemployee;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,22 +8,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
-import com.example.group2_f2019_mad3125_fp.MainMenuActivity;
 import com.example.group2_f2019_mad3125_fp.R;
 import com.example.group2_f2019_mad3125_fp.Singleton;
 import com.example.group2_f2019_mad3125_fp.model.employee.Employee;
@@ -35,7 +26,6 @@ import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.partTime.
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Car;
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Motorcycle;
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Vehicle;
-import com.example.group2_f2019_mad3125_fp.ui.showemployee.ShowEmployeeFragment;
 
 public class AddEmployeeFragment extends Fragment {
 
@@ -323,6 +313,5 @@ public class AddEmployeeFragment extends Fragment {
             }
         }
     }
-
 
 }

@@ -1,15 +1,10 @@
 package com.example.group2_f2019_mad3125_fp.model.employee;
 
 
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
-
 import com.example.group2_f2019_mad3125_fp.model.vehicle.Vehicle;
 
 import java.io.Serializable;
 import java.util.Calendar;
-import java.util.Date;
 
 
 public class Employee implements Serializable {
@@ -55,7 +50,7 @@ public class Employee implements Serializable {
 
     public int getAge()
     {
-        //Date dateobj = new Date();
+
         int curDate= Calendar.getInstance().get(Calendar.YEAR);;
         age=curDate-age;
         return age;
