@@ -229,7 +229,7 @@ public class AddEmployeeFragment extends Fragment {
             bonus = Double.parseDouble(edtBonus.getText().toString());
             FullTime fullTime = new FullTime();
             fullTime.setName(name);
-            fullTime.setAge(age);
+            fullTime.setCalBirthYear(age);
             fullTime.setSalary(salary);
             fullTime.setBonus(bonus);
             fullTime.setVehicle(vehicle);
@@ -238,7 +238,8 @@ public class AddEmployeeFragment extends Fragment {
             addVehicleData(fullTime);
             employee = fullTime;
             singleton.addEmployee(employee);
-            //Log.d("DataEntry", String.valueOf(fullTime.calEarnings()));
+            Log.d("DataEntry", String.valueOf(fullTime.getAge()));
+
         }
         if (rbParttime.isChecked()){
             if (chkFixedOrCommission.isChecked())
@@ -250,7 +251,7 @@ public class AddEmployeeFragment extends Fragment {
                 commisionPer = Double.parseDouble(edtCommissionPerOrFixedAmt.getText().toString());
                 CommissionBasedPartTime com = new CommissionBasedPartTime();
                 com.setName(name);
-                com.setAge(age);
+                com.setCalBirthYear(age);
                 com.setRate(rate);
                 com.setHoursWorked(hoursWorked);
                 com.setCommissionPercentage(commisionPer);
@@ -260,7 +261,8 @@ public class AddEmployeeFragment extends Fragment {
                 addVehicleData(com);
                 employee = com;
                 singleton.addEmployee(employee);
-              //  Log.d("DataEntry", "com");
+                Log.d("DataEntry", String.valueOf(com.getAge()));
+
             }else
             {
                 name = edtName.getText().toString();
@@ -270,7 +272,7 @@ public class AddEmployeeFragment extends Fragment {
                 fixedAmount = Double.parseDouble(edtCommissionPerOrFixedAmt.getText().toString());
                 FixedBasedPartTime fix = new FixedBasedPartTime();
                 fix.setName(name);
-                fix.setAge(age);
+                fix.setCalBirthYear(age);
                 fix.setRate(rate);
                 fix.setHoursWorked(hoursWorked);
                 fix.setFixedAmount(fixedAmount);
@@ -280,7 +282,8 @@ public class AddEmployeeFragment extends Fragment {
                 addVehicleData(fix);
                 employee = fix;
                 singleton.addEmployee(employee);
-               // Log.d("DataEntry", "Fix");
+                Log.d("DataEntry", String.valueOf(fix.getAge()));
+
             }
         }
        // Log.d("DataEntry", "Finish");

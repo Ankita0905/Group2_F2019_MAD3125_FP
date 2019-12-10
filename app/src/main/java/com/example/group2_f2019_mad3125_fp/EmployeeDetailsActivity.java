@@ -86,7 +86,7 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
             }
             else
             {
-                ftLayout.setVisibility(View.VISIBLE);
+                fbPtLayout.setVisibility(View.VISIBLE);
                 fixedAmount.setText(String.valueOf(((FixedBasedPartTime)e).getFixedAmount()));
                 totalSalaryFixPt.setText(String.valueOf(((FixedBasedPartTime)e).calEarnings()));
             }

@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".EmployeeDetailsActivity"
-            android:label="Employee Details"
-            android:parentActivityName=".MainMenuActivity"></activity>
+            android:label="Employee Details">
+            </activity>
         <activity
             android:name=".MainMenuActivity"
             android:label="@string/title_activity_main_menu"
