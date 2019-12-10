@@ -22,19 +22,25 @@ public class Singleton {
         return myObj;
     }
 
-    public void addEmployee(Employee e) {
+    public void addEmployee(Employee e)
+    {
+
         arrayListEmployee.add(e);
     }
 
-    public Employee getEmployeeByIndex(int index) {
-        if (index < arrayListEmployee.size()) {
+    public Employee getEmployeeByIndex(int index)
+    {
+        if (index < arrayListEmployee.size())
+        {
             return arrayListEmployee.get(index);
         }
         return null;
     }
 
-    public ArrayList<Employee> getEmployees() {
-        if (arrayListEmployee.size() > 0) {
+    public ArrayList<Employee> getEmployees()
+    {
+        if (arrayListEmployee.size() > 0)
+        {
             return arrayListEmployee;
         }
         return null;

@@ -239,6 +239,8 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
             app:layout_constraintStart_toStartOf="@+id/txtHrsWorked" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/PTCommLayout"
             android:layout_width="0dp"
@@ -247,7 +249,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
             app:layout_constraintVertical_bias="0.0">
 
             <TextView
@@ -262,8 +264,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
-
             <TextView
                 android:id="@+id/txtCommPer"
                 android:layout_width="wrap_content"
@@ -272,6 +272,25 @@
                 android:textSize="18dp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
                 app:layout_constraintStart_toEndOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Total Salary :"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+            <TextView
+                android:id="@+id/txtComPTotalSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
+                app:layout_constraintStart_toStartOf="@+id/txtCommPer" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -284,7 +303,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
             app:layout_constraintVertical_bias="0.0">
 
             <TextView
@@ -310,29 +329,28 @@
                 app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
                 app:layout_constraintStart_toEndOf="@+id/textView20" />
 
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Total Salary :"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/PTFixLayout" />
+
+
+            <TextView
+                android:id="@+id/txtFixPTotalSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
+                app:layout_constraintStart_toStartOf="@+id/txtFixedAmnount" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Total Salary :"
-            android:textSize="18dp"
-            app:layout_constraintStart_toStartOf="@+id/textView17"
-            app:layout_constraintTop_toBottomOf="@+id/PTFixLayout" />
-
-
-        <TextView
-            android:id="@+id/txtPTotalSalary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18dp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
-            app:layout_constraintStart_toStartOf="@+id/txtRate" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
