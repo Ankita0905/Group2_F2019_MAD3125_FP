@@ -5,7 +5,8 @@ import com.example.group2_f2019_mad3125_fp.model.employee.Employee;
 
 import java.io.Serializable;
 
-public class Intern extends Employee implements Serializable {
+public class Intern extends Employee implements Serializable
+{
 
     private String schoolName;
 
