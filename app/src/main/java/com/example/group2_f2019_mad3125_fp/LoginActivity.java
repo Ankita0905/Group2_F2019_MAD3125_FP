@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
 //
 //
                     showAlert();
-                    //Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
+                    
 
 
                 }
