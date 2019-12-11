@@ -9,7 +9,7 @@ Ankita Jain (C0765767)
 Kamaljit Kaur(C0772737)
 
 GitScrum:
-https://gitscrum.com/ankita0905/employee-payroll-system/sprints
+https://gitscrum.com/ankita0905/employee-payroll-system/planning
 
 | Sr. No.         | Image               |        Description |
 |---------------|---------------------|--------------------|  
