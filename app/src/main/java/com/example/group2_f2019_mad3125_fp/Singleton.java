@@ -16,7 +16,7 @@ public class Singleton
     private static Singleton myObj;
 
     ArrayList<Employee> arrayListEmployee = new ArrayList<>();
-    
+
     private Singleton()
     {
         arrayListEmployee = new ArrayList<>();

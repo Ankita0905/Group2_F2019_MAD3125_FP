@@ -64,6 +64,7 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         name.setText(String.valueOf(e.getName()));
         age.setText(String.valueOf(e.getAge())+" Yrs");
         empType.setText(String.valueOf(e.getEmployee()));
+
         if (e instanceof Intern) {
             intern.setVisibility(View.VISIBLE);
             schoolName.setText(((Intern) e).getSchoolName());
