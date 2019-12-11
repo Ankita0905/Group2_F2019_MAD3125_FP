@@ -35,7 +35,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:hint="Enter Name" />
+            android:hint="Enter Name"
+            android:digits="abcdefghijklmnopqrstuvwxyzAQWERTYUIOPASDFGHJKLZXCVBNM"/>
 
         <EditText
             android:id="@+id/edtDob"
@@ -43,7 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:hint="Enter Birth Year" />
+            android:hint="Enter Birth Year"
+            android:inputType="numberDecimal"/>
 
         <CheckBox
             android:id="@+id/chkVehicle"
@@ -166,7 +168,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Hours worked"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:inputType="numberDecimal"/>
 
             <EditText
                 android:id="@+id/edtRate"
@@ -174,7 +177,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:hint="Rate"/>
+                android:hint="Rate"
+                android:inputType="numberDecimal"/>
 
             <CheckBox
                 android:id="@+id/chkFixedOrCommission"
@@ -194,7 +198,8 @@
                     android:id="@+id/edtCommissionPerOrFixedAmt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Commission Percentage fixed amount"/>
+                    android:hint="Commission Percentage fixed amount"
+                    android:inputType="numberDecimal"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -209,6 +214,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="School Name"
+                android:digits="abcdefghijklmnopqrstuvwxyzAQWERTYUIOPASDFGHJKLZXCVBNM"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"/>
 
@@ -227,7 +233,8 @@
                 android:layout_height="wrap_content"
                 android:hint="Salary"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"/>
+                android:layout_marginRight="5dp"
+                android:inputType="numberDecimal"/>
 
             <EditText
                 android:id="@+id/edtBonus"
@@ -235,7 +242,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
-                android:hint="Bonus"/>
+                android:hint="Bonus"
+                android:inputType="numberDecimal"/>
 
         </LinearLayout>
 
