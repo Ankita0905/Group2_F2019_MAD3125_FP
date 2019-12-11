@@ -59,7 +59,8 @@ public class RecyclerViewDemoAdapter extends RecyclerView.Adapter<RecyclerViewDe
         return employeeList.size();
     }
 
-    public static class DemoViewHolder extends RecyclerView.ViewHolder {
+    public static class DemoViewHolder extends RecyclerView.ViewHolder
+    {
         public TextView empName;
         public TextView empType;
         public DemoViewHolder(@NonNull View itemView)
