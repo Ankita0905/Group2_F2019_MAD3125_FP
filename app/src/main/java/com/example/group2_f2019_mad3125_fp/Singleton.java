@@ -42,8 +42,7 @@ public class Singleton
         addEmployee(fbPt);
 
     }
-
-
+    
     public static Singleton getInstance()
     {
         if (myObj == null)
