@@ -64,13 +64,14 @@ public class AddEmployeeFragment extends Fragment {
     Singleton singleton=Singleton.getInstance();
 
     String name;
+    String schoolName;
     int age = 0;
 
     double rate;
     double hoursWorked;
     double salary;
     double bonus;
-    String schoolName;
+
     double commisionPer;
     double fixedAmount;
 
