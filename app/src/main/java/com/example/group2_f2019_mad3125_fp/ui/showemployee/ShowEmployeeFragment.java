@@ -57,13 +57,7 @@ public class ShowEmployeeFragment extends Fragment {
     private void populateData() {
         employeeList = new ArrayList<>();
         employeeList=singleton.getEmployees();
-      //  employeeList.add(new Employee("Ankita","Intern"));
-//        employeeList=singleton.getEmployees();
-//        for(int i=0;i<employeeList.size();i++)
-//        {
-//            employeeList.add(new Employee(employeeList.get(i).getName(),employeeList.get(i).getEmployee()));
-//            //employeeList.get(i).getEmployee();
-//        }
+
 
     }
 }
