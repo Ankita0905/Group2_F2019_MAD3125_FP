@@ -16,7 +16,8 @@ public abstract class PartTime extends Employee implements Serializable
         super();
     }
 
-    public PartTime(String name, int age, double rate, double hoursWorked,String etype) {
+    public PartTime(String name, int age, double rate, double hoursWorked,String etype)
+    {
         super(name, age,etype);
         this.rate = rate;
         this.hoursWorked = hoursWorked;
