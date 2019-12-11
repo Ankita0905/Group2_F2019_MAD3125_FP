@@ -5,7 +5,8 @@ import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.PartTime;
 
 import java.io.Serializable;
 
-public class CommissionBasedPartTime extends PartTime implements Serializable {
+public class CommissionBasedPartTime extends PartTime implements Serializable
+{
 
     private double commissionPercentage;
 
