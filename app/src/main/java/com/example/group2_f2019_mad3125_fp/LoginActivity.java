@@ -27,22 +27,21 @@ public class LoginActivity extends AppCompatActivity {
         btnlogin = findViewById(R.id.btnLogin);
 
 
-        btnlogin.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 if (userName.getText().toString().equals("user@employee.com") &&
-                        password.getText().toString().equals("s3cr3t")) {
+                        password.getText().toString().equals("s3cr3t"))
+                {
                     Intent i = new Intent(LoginActivity.this, MainMenuActivity.class);
                     startActivity(i);
-                } else {
-//
-//
-//
-                    showAlert();
-                    
-
-
                 }
+                else
+                    {
+                    showAlert();
+                    }
             }
         });
     }
