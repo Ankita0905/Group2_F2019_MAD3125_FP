@@ -46,12 +46,5 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-//    @Override
-//    public void onBackPressed() {
-//        if (this.f.isDrawerOpen(GravityCompat.START)) {
-//            this.drawerLayout.closeDrawer(GravityCompat.START);
-//        } else {
-//            finish();
-//        }
-//    }
+
 }
