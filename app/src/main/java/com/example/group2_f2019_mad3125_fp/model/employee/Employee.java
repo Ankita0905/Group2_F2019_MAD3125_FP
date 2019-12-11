@@ -20,7 +20,6 @@ public class Employee implements Serializable
     public String getVehicleType()
     {
         vehicleType=vehicle.getVType();
-
         return vehicleType;
     }
 
