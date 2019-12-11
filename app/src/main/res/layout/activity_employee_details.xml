@@ -353,8 +353,7 @@
             android:textSize="18dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
             app:layout_constraintStart_toStartOf="@+id/txtFixedAmnount" />
-
-
+        
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
