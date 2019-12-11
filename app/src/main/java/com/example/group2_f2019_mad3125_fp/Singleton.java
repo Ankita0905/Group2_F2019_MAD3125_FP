@@ -11,7 +11,8 @@ import com.example.group2_f2019_mad3125_fp.model.vehicle.Motorcycle;
 
 import java.util.ArrayList;
 
-public class Singleton {
+public class Singleton
+{
     private static Singleton myObj;
 
 
