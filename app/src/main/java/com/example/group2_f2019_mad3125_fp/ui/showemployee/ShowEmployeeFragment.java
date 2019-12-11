@@ -28,8 +28,7 @@ public class ShowEmployeeFragment extends Fragment {
     private List<Employee> employeeList;
     private RecyclerViewDemoAdapter demoAdapter;
     Singleton singleton=Singleton.getInstance();
-
-
+    
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -48,7 +47,7 @@ public class ShowEmployeeFragment extends Fragment {
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         rvEmpList.setLayoutManager(mLayoutManager);
-        
+
         rvEmpList.setAdapter(demoAdapter);
 
     }
