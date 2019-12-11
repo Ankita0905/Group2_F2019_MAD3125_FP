@@ -187,6 +187,7 @@
             android:textSize="18dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView14"
             app:layout_constraintStart_toStartOf="@+id/txtBonus" />
+
         <TextView
             android:id="@+id/txtFTotalSalary"
             android:layout_width="wrap_content"
@@ -238,6 +239,7 @@
             android:textSize="18dp"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
             app:layout_constraintStart_toEndOf="@+id/textView16" />
+        
         <TextView
             android:id="@+id/txtRate"
             android:layout_width="wrap_content"
