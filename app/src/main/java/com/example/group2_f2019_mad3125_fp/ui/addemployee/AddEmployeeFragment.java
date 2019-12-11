@@ -95,6 +95,7 @@ public class AddEmployeeFragment extends Fragment {
         rgbVehicle=root.findViewById(R.id.rgbVehicle);
         linearVehicle=root.findViewById(R.id.linearVehicle);
         //imgModel=root.findViewById(R.id.imgModel);
+
         edtModel=root.findViewById(R.id.edtModel);
         edtplate=root.findViewById(R.id.edtplate);
         relativeVehicleInfo=root.findViewById(R.id.relativeVehicleInfo);
@@ -102,6 +103,7 @@ public class AddEmployeeFragment extends Fragment {
         rbFulltime=root.findViewById(R.id.rbFulltime);
         rbIntern=root.findViewById(R.id.rbIntern);
         rgbEmployeeType=root.findViewById(R.id.rgbEmployeeType);
+        
         linearEmpType=root.findViewById(R.id.linearEmpType);
         edtHours=root.findViewById(R.id.edtHours);
         edtRate=root.findViewById(R.id.edtRate);
