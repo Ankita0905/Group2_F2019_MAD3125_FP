@@ -25,7 +25,7 @@ https://gitscrum.com/ankita0905/employee-payroll-system/sprints
 10 | <img src="https://user-images.githubusercontent.com/55303200/70661883-349f8200-1c33-11ea-868b-b832d3ae68ff.png" width="100" height="120"/> | Entering Full Time Employee details
 11 | <img src="https://user-images.githubusercontent.com/55303200/70661882-349f8200-1c33-11ea-9a86-00869910fc40.png" width="100" height="120"/> | Entering Intern details
 12 | <img src="https://user-images.githubusercontent.com/55303200/70661884-349f8200-1c33-11ea-984c-bcf0563a3562.png" width="100" height="120"/> | Entering Partime CommisSionBased Details
-13 | <img src="https://user-images.githubusercontent.com/55303195/70644958-06f61100-1c12-11ea-9638-bb64ea997db7.png" width="100" height="120"/> | Help Alert Dailog 
+13 | <img src="https://user-images.githubusercontent.com/55303200/70661886-349f8200-1c33-11ea-867b-b912ec07c003.png" width="100" height="120"/> | Help Alert Dailog 
 
 
 Refernces:
