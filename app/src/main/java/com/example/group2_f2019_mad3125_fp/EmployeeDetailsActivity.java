@@ -45,14 +45,13 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         ptLayout=findViewById(R.id.PartTmLayout);
         cmPtLayout=findViewById(R.id.PTCommLayout);
         fbPtLayout=findViewById(R.id.PTFixLayout);
-        
+
         cmPtLayout.setVisibility(View.GONE);
         fbPtLayout.setVisibility(View.GONE);
         ptLayout.setVisibility(View.GONE);
         ftLayout.setVisibility(View.GONE);
         intern.setVisibility(View.GONE);
-
-
+        
 
 //        RecyclerViewAdapter r=new RecyclerViewAdapter();
 //        System.out.println("POS :"+r.getPos());
