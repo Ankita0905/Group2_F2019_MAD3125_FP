@@ -5,7 +5,8 @@ import com.example.group2_f2019_mad3125_fp.model.employee.Employee;
 
 import java.io.Serializable;
 
-public abstract class PartTime extends Employee implements Serializable {
+public abstract class PartTime extends Employee implements Serializable
+{
 
     private double rate;
     private double hoursWorked;
