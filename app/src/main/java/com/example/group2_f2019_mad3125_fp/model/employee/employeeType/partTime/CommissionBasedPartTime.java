@@ -29,7 +29,8 @@ public class CommissionBasedPartTime extends PartTime implements Serializable
         this.commissionPercentage = commissionPercentage;
     }
 
-    public double calEarnings(){
+    public double calEarnings()
+    {
         return ((getRate()*getHoursWorked()) + ((commissionPercentage/100) *(getRate()*getHoursWorked())));
     }
     @Override
