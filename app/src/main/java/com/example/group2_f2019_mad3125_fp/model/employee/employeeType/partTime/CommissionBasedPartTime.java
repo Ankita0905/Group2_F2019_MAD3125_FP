@@ -24,7 +24,8 @@ public class CommissionBasedPartTime extends PartTime implements Serializable
         return commissionPercentage;
     }
 
-    public void setCommissionPercentage(double commissionPercentage) {
+    public void setCommissionPercentage(double commissionPercentage)
+    {
         this.commissionPercentage = commissionPercentage;
     }
 
