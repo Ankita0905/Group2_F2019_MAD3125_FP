@@ -35,17 +35,9 @@ public class LoginActivity extends AppCompatActivity {
                     Intent i = new Intent(LoginActivity.this, MainMenuActivity.class);
                     startActivity(i);
                 } else {
-//                   
 //
 //
-//                    if(password.getText().toString()!="s3cr3t")
-//                    {
-//                        password.setError("Invalid Password");
-//                    }
-//                    else
-//                    {
-//                        userName.setError(null);
-//                    }
+//
                     showAlert();
                     //Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
 
