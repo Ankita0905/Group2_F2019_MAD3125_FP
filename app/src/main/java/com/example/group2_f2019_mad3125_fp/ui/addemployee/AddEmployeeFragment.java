@@ -198,9 +198,8 @@ public class AddEmployeeFragment extends Fragment {
 //                FragmentTransaction fragmentTransaction = fm.beginTransaction();
 //                fragmentTransaction.replace(R.id.nav_showEmployee, fr);
 //                fragmentTransaction.commit();
+
               
-               // mIntent.putExtras(bundle);
-               // AddEmployeeFragment.this.startActivity(mIntent);
             }
         });
 
