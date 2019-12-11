@@ -191,8 +191,7 @@ public class AddEmployeeFragment extends Fragment {
 
                 addData();
                 getActivity().onBackPressed();
-
-
+                
 //                fragmentTransaction.commit();
 
 
