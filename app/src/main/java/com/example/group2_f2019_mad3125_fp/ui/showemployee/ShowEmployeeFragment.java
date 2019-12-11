@@ -44,7 +44,6 @@ public class ShowEmployeeFragment extends Fragment {
         demoAdapter = new RecyclerViewDemoAdapter(employeeList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         rvEmpList.setLayoutManager(mLayoutManager);
-
         rvEmpList.setAdapter(demoAdapter);
 
     }
