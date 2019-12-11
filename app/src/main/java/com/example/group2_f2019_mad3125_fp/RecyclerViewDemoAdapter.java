@@ -49,7 +49,6 @@ public class RecyclerViewDemoAdapter extends RecyclerView.Adapter<RecyclerViewDe
                Intent mIntent = new Intent(holder.itemView.getContext(), EmployeeDetailsActivity.class);
                mIntent.putExtra("employee",(Serializable) mEmp);
                holder.itemView.getContext().startActivity(mIntent);
-
            }
        });
     }
