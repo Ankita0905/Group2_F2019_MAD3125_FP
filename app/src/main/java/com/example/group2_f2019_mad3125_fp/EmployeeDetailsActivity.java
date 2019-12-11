@@ -16,7 +16,7 @@ import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.partTime.
 
 public class EmployeeDetailsActivity extends AppCompatActivity {
 
-    TextView name,age,empType,schoolName,totalSalary,bonus,basicSalaryFt,totalSalaryFt,hoursWorked,rate,commissionPer,fixedAmount,totalSalaryComPt,totalSalaryFixPt;
+    TextView name,age,empType,schoolName,totalSalary,bonus,basicSalaryFt,totalSalaryFt,hoursWorked,rate,commissionPer,fixedAmount,totalSalaryComPt,totalSalaryFixPt,vehicles;
     ConstraintLayout intern,ftLayout,ptLayout,cmPtLayout,fbPtLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +47,7 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         ptLayout.setVisibility(View.GONE);
         ftLayout.setVisibility(View.GONE);
         intern.setVisibility(View.GONE);
+        vehicles=findViewById(R.id.txtVehicleDetails);
 
 //        RecyclerViewAdapter r=new RecyclerViewAdapter();
 //        System.out.println("POS :"+r.getPos());
