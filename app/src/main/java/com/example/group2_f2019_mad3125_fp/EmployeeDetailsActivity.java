@@ -97,7 +97,6 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
                 totalSalaryFixPt.setText("$ "+String.valueOf(((FixedBasedPartTime)e).calEarnings()));
             }
 
-
         }
         this.vehicles.setText(e.getVehicle() == null ? "null" : e.getVehicle() instanceof Car ? "CAR" : "MOTORCYCLE");
         vehicles.setText("Employee Has a : "+e.getVehicleType()+"\n\n");
