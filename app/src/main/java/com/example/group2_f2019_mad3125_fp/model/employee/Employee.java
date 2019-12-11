@@ -35,7 +35,7 @@ public class Employee implements Serializable
       this.name=eName;
       this.employee=eType;
     }
-    
+
     public Employee(String name, int age,String Etype)
     {
         this.name = name;
@@ -53,7 +53,6 @@ public class Employee implements Serializable
 
     public int getAge()
     {
-
         int curDate= Calendar.getInstance().get(Calendar.YEAR);;
         age=curDate-age;
         return age;
