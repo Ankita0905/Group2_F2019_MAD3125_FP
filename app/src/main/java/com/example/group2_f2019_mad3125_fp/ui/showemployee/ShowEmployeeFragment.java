@@ -28,13 +28,12 @@ public class ShowEmployeeFragment extends Fragment {
     private List<Employee> employeeList;
     private RecyclerViewDemoAdapter demoAdapter;
     Singleton singleton=Singleton.getInstance();
-    
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_showemployee, container, false);
-
-
+        
         rvEmpList = root.findViewById(R.id.emplistrv);
         initViews();
         return root;
