@@ -15,8 +15,6 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.example.group2_f2019_mad3125_fp.R;
 import com.example.group2_f2019_mad3125_fp.Singleton;
