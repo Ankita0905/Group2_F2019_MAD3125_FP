@@ -79,7 +79,7 @@ public class AddEmployeeFragment extends Fragment {
     //    Employee employee = new Employee();
     Vehicle vehicle = null;
     Employee employee = null;
-    
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -198,8 +198,7 @@ public class AddEmployeeFragment extends Fragment {
 //                FragmentTransaction fragmentTransaction = fm.beginTransaction();
 //                fragmentTransaction.replace(R.id.nav_showEmployee, fr);
 //                fragmentTransaction.commit();
-               // Intent mIntent = new Intent(AddEmployeeFragment.this,MainMenuActivity.class);
-                //Log.d("DataEntry", "IntentCreated");
+              
                // mIntent.putExtras(bundle);
                // AddEmployeeFragment.this.startActivity(mIntent);
             }
