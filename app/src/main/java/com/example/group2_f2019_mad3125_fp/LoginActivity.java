@@ -35,15 +35,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent i = new Intent(LoginActivity.this, MainMenuActivity.class);
                     startActivity(i);
                 } else {
-//                    if(userName.getText().toString()!="user@employee.com")
-//                    {
-//
-//                        userName.setError("Invalid UserName");
-//                    }
-//                    else
-//                        {
-//                        userName.setError(null);
-//                        }
+//                   
 //
 //
 //                    if(password.getText().toString()!="s3cr3t")

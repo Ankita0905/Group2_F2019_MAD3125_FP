@@ -51,7 +51,7 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         ptLayout.setVisibility(View.GONE);
         ftLayout.setVisibility(View.GONE);
         intern.setVisibility(View.GONE);
-        
+
 
 //        RecyclerViewAdapter r=new RecyclerViewAdapter();
 //        System.out.println("POS :"+r.getPos());
