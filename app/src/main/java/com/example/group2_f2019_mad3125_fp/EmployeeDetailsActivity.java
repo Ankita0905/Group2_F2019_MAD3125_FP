@@ -59,38 +59,38 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         System.out.println(e.getEmployee());
 
         name.setText(String.valueOf(e.getName()));
-        age.setText(String.valueOf(e.getAge()));
+        age.setText(String.valueOf(e.getAge())+" Yrs");
         empType.setText(String.valueOf(e.getEmployee()));
         if (e instanceof Intern) {
             intern.setVisibility(View.VISIBLE);
             schoolName.setText(((Intern) e).getSchoolName());
-            totalSalary.setText("$"+String.valueOf(e.calEarnings()));
+            totalSalary.setText("$ "+String.valueOf(e.calEarnings()));
         }
 
         if(e instanceof FullTime)
         {
             ftLayout.setVisibility(View.VISIBLE);
-            bonus.setText(String.valueOf(((FullTime)e).getBonus()));
-            basicSalaryFt.setText("$"+String.valueOf(((FullTime)e).getSalary()));
-            totalSalaryFt.setText("$"+String.valueOf(((FullTime)e).calEarnings()));
+            bonus.setText("$ "+String.valueOf(((FullTime)e).getBonus()));
+            basicSalaryFt.setText("$ "+String.valueOf(((FullTime)e).getSalary()));
+            totalSalaryFt.setText("$ "+String.valueOf(((FullTime)e).calEarnings()));
         }
         if(e instanceof PartTime)
         {
             ptLayout.setVisibility(View.VISIBLE);
             hoursWorked.setText(String.valueOf(((PartTime)e).getHoursWorked())+"Hrs");
-            rate.setText("$"+String.valueOf(((PartTime)e).getRate()));
+            rate.setText("$ "+String.valueOf(((PartTime)e).getRate()));
 
             if(e instanceof CommissionBasedPartTime)
             {
                 cmPtLayout.setVisibility(View.VISIBLE);
-                commissionPer.setText(String.valueOf(((CommissionBasedPartTime)e).getCommissionPercentage())+"%");
+                commissionPer.setText(String.valueOf(((CommissionBasedPartTime)e).getCommissionPercentage())+" %");
                 totalSalaryComPt.setText("$"+String.valueOf(((CommissionBasedPartTime)e).calEarnings()));
             }
             else
             {
                 fbPtLayout.setVisibility(View.VISIBLE);
-                fixedAmount.setText("$"+String.valueOf(((FixedBasedPartTime)e).getFixedAmount()));
-                totalSalaryFixPt.setText("$"+String.valueOf(((FixedBasedPartTime)e).calEarnings()));
+                fixedAmount.setText("$ "+String.valueOf(((FixedBasedPartTime)e).getFixedAmount()));
+                totalSalaryFixPt.setText("$ "+String.valueOf(((FixedBasedPartTime)e).calEarnings()));
             }
 
 
