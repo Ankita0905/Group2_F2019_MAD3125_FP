@@ -10,7 +10,6 @@
         android:id="@+id/txtEmpName"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:layout_margin="16dp"
         android:text="TextView"
         android:textSize="20sp"
