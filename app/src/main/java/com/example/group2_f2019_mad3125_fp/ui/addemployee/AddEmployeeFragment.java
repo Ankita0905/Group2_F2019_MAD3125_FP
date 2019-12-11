@@ -193,7 +193,7 @@ public class AddEmployeeFragment extends Fragment {
                 getActivity().onBackPressed();
 
 
-//                FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
 //                fragmentTransaction.replace(R.id.nav_showEmployee, fr);
 //                fragmentTransaction.commit();
 
