@@ -13,6 +13,7 @@ import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.Intern;
 import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.PartTime;
 import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.partTime.CommissionBasedPartTime;
 import com.example.group2_f2019_mad3125_fp.model.employee.employeeType.partTime.FixedBasedPartTime;
+import com.example.group2_f2019_mad3125_fp.model.vehicle.Car;
 
 public class EmployeeDetailsActivity extends AppCompatActivity {
 
@@ -94,6 +95,10 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
 
 
         }
+        this.vehicles.setText(e.getVehicle() == null ? "null" : e.getVehicle() instanceof Car ? "CAR" : "MOTORCYCLE");
+        vehicles.setText("Employee Has a : "+e.getVehicleType()+"\n\n");
+        vehicles.append("Make : "+e.getVehicle().getCompany()+"\n\n");
+        vehicles.append("Plate : "+e.getVehicle().getPlate()+"\n");
 
     }
     }
