@@ -16,7 +16,8 @@ public class FullTime extends Employee implements Serializable
         super();
     }
 
-    public FullTime(String name, int age, double salary, double bonus) {
+    public FullTime(String name, int age, double salary, double bonus)
+    {
         super(name, age,"Full Time");
         this.salary = salary;
         this.bonus = bonus;
