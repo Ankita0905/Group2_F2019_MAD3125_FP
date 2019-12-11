@@ -103,7 +103,7 @@ public class AddEmployeeFragment extends Fragment {
         rbFulltime=root.findViewById(R.id.rbFulltime);
         rbIntern=root.findViewById(R.id.rbIntern);
         rgbEmployeeType=root.findViewById(R.id.rgbEmployeeType);
-        
+
         linearEmpType=root.findViewById(R.id.linearEmpType);
         edtHours=root.findViewById(R.id.edtHours);
         edtRate=root.findViewById(R.id.edtRate);
@@ -112,6 +112,7 @@ public class AddEmployeeFragment extends Fragment {
         linearFixedOrCommission=root.findViewById(R.id.linearFixedOrCommission);
         linearParttime=root.findViewById(R.id.linearParttime);
         edtSchoolName=root.findViewById(R.id.edtSchoolName);
+        
         linearIntern=root.findViewById(R.id.linearIntern);
         edtSalary=root.findViewById(R.id.edtSalary);
         edtBonus= root.findViewById(R.id.edtBonus);
