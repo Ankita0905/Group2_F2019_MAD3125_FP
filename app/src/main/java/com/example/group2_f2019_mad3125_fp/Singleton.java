@@ -18,7 +18,8 @@ public class Singleton {
     ArrayList<Employee> arrayListEmployee = new ArrayList<>();
 
 
-    private Singleton() {
+    private Singleton()
+    {
         arrayListEmployee = new ArrayList<>();
 
         Intern i1=new Intern("Ankita",24,"Lambton");
