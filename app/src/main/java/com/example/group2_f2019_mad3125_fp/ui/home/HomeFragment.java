@@ -33,7 +33,6 @@ public class HomeFragment extends Fragment {
         //Get an instance of the formatter
         DateFormat dateFormat = DateFormat.getDateInstance();
         
-
         //Format date
         String todayDateTimeString = dateFormat.format(todayDate);
 
