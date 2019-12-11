@@ -33,7 +33,6 @@ public class ShowEmployeeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_showemployee, container, false);
-        
         rvEmpList = root.findViewById(R.id.emplistrv);
         initViews();
         return root;
