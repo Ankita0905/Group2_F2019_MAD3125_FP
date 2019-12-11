@@ -28,7 +28,8 @@ public abstract class Vehicle implements Serializable {
         return VType;
     }
 
-    public void setVType(String VType) {
+    public void setVType(String VType)
+    {
         this.VType = VType;
     }
 
