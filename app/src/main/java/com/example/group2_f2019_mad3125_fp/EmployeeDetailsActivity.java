@@ -38,19 +38,21 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         fixedAmount=findViewById(R.id.txtFixedAmnount);
         totalSalaryComPt=findViewById(R.id.txtComPTotalSalary);
         totalSalaryFixPt=findViewById(R.id.txtFixPTotalSalary);
+        vehicles=findViewById(R.id.txtVehicleDetails);
 
         intern = findViewById(R.id.InternLayout);
         ftLayout=findViewById(R.id.FullTmLayout);
         ptLayout=findViewById(R.id.PartTmLayout);
         cmPtLayout=findViewById(R.id.PTCommLayout);
         fbPtLayout=findViewById(R.id.PTFixLayout);
+        
         cmPtLayout.setVisibility(View.GONE);
         fbPtLayout.setVisibility(View.GONE);
         ptLayout.setVisibility(View.GONE);
         ftLayout.setVisibility(View.GONE);
         intern.setVisibility(View.GONE);
 
-        vehicles=findViewById(R.id.txtVehicleDetails);
+
 
 //        RecyclerViewAdapter r=new RecyclerViewAdapter();
 //        System.out.println("POS :"+r.getPos());
