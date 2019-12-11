@@ -46,7 +46,8 @@ public class Singleton
     }
 
 
-    public static Singleton getInstance() {
+    public static Singleton getInstance()
+    {
         if (myObj == null)
         {
             myObj = new Singleton();
