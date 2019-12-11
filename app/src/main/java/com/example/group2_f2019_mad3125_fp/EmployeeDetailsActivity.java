@@ -38,6 +38,7 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         fixedAmount=findViewById(R.id.txtFixedAmnount);
         totalSalaryComPt=findViewById(R.id.txtComPTotalSalary);
         totalSalaryFixPt=findViewById(R.id.txtFixPTotalSalary);
+
         intern = findViewById(R.id.InternLayout);
         ftLayout=findViewById(R.id.FullTmLayout);
         ptLayout=findViewById(R.id.PartTmLayout);
@@ -48,6 +49,7 @@ public class EmployeeDetailsActivity extends AppCompatActivity {
         ptLayout.setVisibility(View.GONE);
         ftLayout.setVisibility(View.GONE);
         intern.setVisibility(View.GONE);
+
         vehicles=findViewById(R.id.txtVehicleDetails);
 
 //        RecyclerViewAdapter r=new RecyclerViewAdapter();
