@@ -15,6 +15,8 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.group2_f2019_mad3125_fp.R;
 import com.example.group2_f2019_mad3125_fp.Singleton;
@@ -188,6 +190,8 @@ public class AddEmployeeFragment extends Fragment {
             public void onClick(View view) {
 
                 addData();
+
+
 //                Fragment fr =new ShowEmployeeFragment();
 //                FragmentManager fm = getFragmentManager();
 //                FragmentTransaction fragmentTransaction = fm.beginTransaction();
@@ -202,6 +206,7 @@ public class AddEmployeeFragment extends Fragment {
 
         return root;
     }
+
 
 
     public Employee addData(){
@@ -294,20 +299,22 @@ public class AddEmployeeFragment extends Fragment {
         if (chkVehicle.isChecked()){
             if (rbCar.isChecked()){
                 Car car = new Car();
+                car.setVType("Car");
                 car.setCompany(edtModel.getText().toString());
                 car.setPlate(edtplate.getText().toString());
                 car.setColour("car");
                 car.setYear(2015);
-                emp.setVehicleType("car");
+                emp.setVehicleType("Car");
                 emp.setVehicle(car);
                 vehicle = car;
                // Log.d("DataEntry", "car");
             }
             if (rbMotorcycle.isChecked()){
                 Motorcycle motorcycle = new Motorcycle();
+                motorcycle.setVType("Motorcycle");
                 motorcycle.setCompany(edtModel.getText().toString());
                 motorcycle.setPlate(edtplate.getText().toString());
-                motorcycle.setColour("motor");
+                motorcycle.setColour("MotorCycle");
                 motorcycle.setYear(2015);
                 emp.setVehicleType("motor");
                 emp.setVehicle(motorcycle);
