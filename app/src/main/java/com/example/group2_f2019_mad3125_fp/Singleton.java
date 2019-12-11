@@ -54,8 +54,7 @@ public class Singleton {
 
     public void addEmployee(Employee e)
     {
-
-
+        
         arrayListEmployee.add(e);
     }
 
