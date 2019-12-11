@@ -15,7 +15,8 @@ public class Intern extends Employee implements Serializable
         super();
     }
 
-    public Intern(String name, int age, String schoolName) {
+    public Intern(String name, int age, String schoolName) 
+    {
         super(name, age,"Intern");
         this.schoolName = schoolName;
     }
