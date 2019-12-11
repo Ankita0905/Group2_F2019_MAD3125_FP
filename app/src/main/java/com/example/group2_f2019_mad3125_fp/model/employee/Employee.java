@@ -9,7 +9,6 @@ import java.util.Calendar;
 
 public class Employee implements Serializable
 {
-
     private String name;
     private int age;
     private Vehicle vehicle;
