@@ -15,7 +15,7 @@ https://gitscrum.com/ankita0905/employee-payroll-system/sprints
 |---------------|---------------------|--------------------|  
 1 | <img src="https://user-images.githubusercontent.com/55303200/70661891-35381880-1c33-11ea-910e-ead62ce8b434.png" width="100" height="120"/>| Splash Screen|
 2 | <img src="https://user-images.githubusercontent.com/55303200/70661889-35381880-1c33-11ea-8520-ca5c00caadd0.png" width="100" height="120"/> | User Login Screen With Hard Coded values and disabled fields
-3 | <img src="https://user-images.githubusercontent.com/55303195/70644972-0b222e80-1c12-11ea-81c8-2261c2b67b1d.png" width="100" height="120"/> | Home Activity
+3 | <img src="https://user-images.githubusercontent.com/55303200/70661887-349f8200-1c33-11ea-8cff-0095a03bd947.png" width="100" height="120"/> | Home Activity
 4 | <img src="https://user-images.githubusercontent.com/55303195/70644962-08bfd480-1c12-11ea-9321-307b55f4bb2f.png" width="100" height="120"/> | Navigation Drawer
 5 | <img src="https://user-images.githubusercontent.com/55303195/70647141-4aeb1500-1c16-11ea-958d-65bba9df9fa8.png" width="100" height="120"/> | Employee List with Recycler View
 6 | <img src="https://user-images.githubusercontent.com/55303195/70647976-2132ed80-1c18-11ea-90ef-42d0c46fd541.png" width="100" height="120"/> | Employee Details(Part Time)
