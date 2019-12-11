@@ -14,8 +14,7 @@ import java.util.ArrayList;
 public class Singleton
 {
     private static Singleton myObj;
-
-
+    
     ArrayList<Employee> arrayListEmployee = new ArrayList<>();
 
 
