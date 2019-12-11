@@ -35,7 +35,9 @@ public class Car extends Vehicle implements Serializable {
     }
 
     public void Vehicle()
-    {}
+    {
+        
+    }
 
     @Override
     public void printMyData()
