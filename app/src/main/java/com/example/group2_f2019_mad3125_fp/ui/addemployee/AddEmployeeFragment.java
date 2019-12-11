@@ -79,11 +79,10 @@ public class AddEmployeeFragment extends Fragment {
     //    Employee employee = new Employee();
     Vehicle vehicle = null;
     Employee employee = null;
-
-
+    
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        
+
         View root = inflater.inflate(R.layout.fragment_addemployee, container, false);
         //final TextView textView = root.findViewById(R.id);
         edtName=root.findViewById(R.id.edtName);
