@@ -21,6 +21,7 @@
         app:layout_constraintVertical_bias="0.344" />
 
     <DigitalClock
+        android:id="@+id/digitalClock"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -31,5 +32,17 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_date" />
+
+    <TextView
+        android:id="@+id/numberEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/digitalClock"
+        app:layout_constraintStart_toStartOf="@+id/digitalClock"
+        app:layout_constraintTop_toBottomOf="@+id/digitalClock" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
