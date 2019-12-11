@@ -35,7 +35,9 @@ public class Motorcycle extends Vehicle implements Serializable {
     }
 
     public void Vehicle()
-    {}
+    {
+        
+    }
 
     @Override
     public void printMyData()
