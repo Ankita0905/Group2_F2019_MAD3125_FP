@@ -36,7 +36,16 @@ public class RecyclerViewDemoAdapter extends RecyclerView.Adapter<RecyclerViewDe
         holder.empName.setText(mEmp.getName());
         holder.empType.setText(mEmp.getEmployee());
 
-       
+        //Setting click on cell
+       holder.itemView.setOnClickListener(new View.OnClickListener()
+       {
+           @Override
+           public void onClick(View view)
+           {
+               Toast.makeText(holder.itemView.getContext(), mEmp.getName(), Toast.LENGTH_SHORT).show();
+               Intent mIntent = new Intent(holder.itemView.getContext(), EmployeeDetailsActivity.class);
+               mIntent.putExtra("employee",(Serializable) mEmp);
+               holder.itemView.getContext().startActivity(mIntent);
            }
        });
     }
