@@ -76,4 +76,9 @@ public class Singleton {
         }
         return null;
     }
+
+    public int arraySize()
+    {
+        return arrayListEmployee.size();
+    }
 }

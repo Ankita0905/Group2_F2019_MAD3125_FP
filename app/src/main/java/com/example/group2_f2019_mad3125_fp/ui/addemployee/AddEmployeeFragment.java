@@ -190,6 +190,7 @@ public class AddEmployeeFragment extends Fragment {
             public void onClick(View view) {
 
                 addData();
+                getActivity().onBackPressed();
 
 
 //                Fragment fr =new ShowEmployeeFragment();
